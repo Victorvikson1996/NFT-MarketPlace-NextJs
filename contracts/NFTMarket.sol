@@ -50,7 +50,7 @@ contract NFTMarket is ReentrancyGuard {
   /* Places an item for sale on the marketplace */
     function createMarketItem (
         address nftContract,
-        uint256 tokenId,
+        uint256 tokenId, 
         uint256 price
     ) public payable nonReentrant {
         require(price > 0, "price must be at least 1 wei");
@@ -58,7 +58,7 @@ contract NFTMarket is ReentrancyGuard {
 
 
         _itemIds.increment();
-        uint256 itemId = _itemIds.current();
+        uint256 itemId = _itemIds.current(); 
 
 
         idToMarketItem[itemId] = MarketItem(
@@ -106,7 +106,7 @@ contract NFTMarket is ReentrancyGuard {
 
 
      /* Returns all unsold market items */
-     function fetchMArketItems() public view returns (MarketItem[] memory) {
+     function fetchMarketItems() public view returns (MarketItem[] memory) {
          uint itemCount = _itemIds.current();
          uint unsoldItemCount = _itemIds.current() - _itemsSold.current();
          uint currentIndex = 0;
