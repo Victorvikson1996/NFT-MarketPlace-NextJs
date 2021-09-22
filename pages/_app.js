@@ -8,11 +8,11 @@ function MyApp({ Component, pageProps }) {
         <p className="text-4xl font-bold">AkuChukwu Metaverse Marketplace</p>
         <div className="flex mt-4">
           <Link href="/" >
-            <a className="mr-6 text-blue-500">
+            <a className="mr-4 text-blue-500">
               Home
             </a>
           </Link>
-          <Link href="/created-item">
+          <Link href="/create-item">
             <a className="mr-6 text-blue-500">
               Sell Digital Asset
             </a>
