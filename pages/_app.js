@@ -5,8 +5,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <nav className="border-b p-6">
-        <p className="text-4xl font-bold">AkuChukwu Metaverse Marketplace</p>
-        <div className="flex mt-4">
+        <p className="text-4xl font-bold">NFT Metaverse Marketplace</p>
+        <div className="flex mt-6">
           <Link href="/" >
             <a className="mr-4 text-blue-500">
               Home

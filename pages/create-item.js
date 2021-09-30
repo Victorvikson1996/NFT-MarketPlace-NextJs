@@ -1,7 +1,5 @@
 import { ethers } from 'ethers'
-import styles from '../styles/Home.module.css'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
 import { create as ipfsHttpClient } from 'ipfs-http-client'
@@ -38,7 +36,7 @@ export default function CreateItem() {
             console.log('Error uploading file: ', error)
         }
     }
-    async function createMarket() {
+    async function createMarket(url) {
         const { name, description, price } = formInput
         if (!name || !description || !price || !fileUrl) return
         /* first, upload to IPFS */
