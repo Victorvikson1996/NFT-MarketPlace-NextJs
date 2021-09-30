@@ -1,9 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 
-.secret
-.infuraid
-config.js
+
 
 # dependencies
 /node_modules
@@ -54,6 +52,10 @@ artifacts
 
 node_modules
 .env
+
+.secret
+.infuraid
+config.js
 
 #Hardhat files
 cache
